@@ -1,13 +1,13 @@
-<!DOCTYPE html><html lang="zh_CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Cloudflare R2储存图床+PicGo上传图片 | 笨蛋小方</title><meta name="author" content="bakaxiaofang"><meta name="copyright" content="bakaxiaofang"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="简单图床搭建完之后我发现访问太慢了 决定迁移到Cloudflare R2储存 CDN免费 总要比我这个2M小水管强多了 图片中的前后域名可能不一致，这是因为我没想好子域名究竟起什么好(´･ω･&#96;)?  付款方式添加 首先你需要可以外币交易的银行卡(或者注册PayPal) 然后有一个Cloudflare账户  吐槽一下我自己 太baka了，填完信用卡一直显示处理您的卡时出错。请检查您的详细">
+<!DOCTYPE html><html lang="zh_CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Cloudflare R2储存图床+PicGo上传图片 | 笨蛋小方</title><meta name="author" content="bakaxiaofang"><meta name="copyright" content="bakaxiaofang"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="简单图床搭建完之后我发现访问太慢了 决定迁移到Cloudflare R2储存 CDN免费 总要比我宽带上传2M小水管强多了 图片中的前后域名可能不一致，这是因为我没想好子域名究竟起什么好(´･ω･&#96;)?  付款方式添加 首先你需要可以外币交易的银行卡(或者注册PayPal) 然后有一个Cloudflare账户  吐槽一下我自己 太baka了，填完信用卡一直显示处理您的卡时出错。请检查您的">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Cloudflare R2储存图床+PicGo上传图片">
 <meta property="og:url" content="https://bakaxiaofang.moe/posts/e9549864.html">
 <meta property="og:site_name" content="笨蛋小方">
-<meta property="og:description" content="简单图床搭建完之后我发现访问太慢了 决定迁移到Cloudflare R2储存 CDN免费 总要比我这个2M小水管强多了 图片中的前后域名可能不一致，这是因为我没想好子域名究竟起什么好(´･ω･&#96;)?  付款方式添加 首先你需要可以外币交易的银行卡(或者注册PayPal) 然后有一个Cloudflare账户  吐槽一下我自己 太baka了，填完信用卡一直显示处理您的卡时出错。请检查您的详细">
+<meta property="og:description" content="简单图床搭建完之后我发现访问太慢了 决定迁移到Cloudflare R2储存 CDN免费 总要比我宽带上传2M小水管强多了 图片中的前后域名可能不一致，这是因为我没想好子域名究竟起什么好(´･ω･&#96;)?  付款方式添加 首先你需要可以外币交易的银行卡(或者注册PayPal) 然后有一个Cloudflare账户  吐槽一下我自己 太baka了，填完信用卡一直显示处理您的卡时出错。请检查您的">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
 <meta property="article:published_time" content="2024-03-10T13:04:51.000Z">
-<meta property="article:modified_time" content="2024-03-10T13:07:53.472Z">
+<meta property="article:modified_time" content="2024-03-11T00:01:44.726Z">
 <meta property="article:author" content="bakaxiaofang">
 <meta property="article:tag" content="建站">
 <meta property="article:tag" content="图床">
@@ -58,7 +58,7 @@
   isHome: false,
   isHighlightShrink: false,
   isToc: true,
-  postUpdate: '2024-03-10 21:07:53'
+  postUpdate: '2024-03-11 08:01:44'
 }</script><script>(win=>{
       win.saveToLocal = {
         set: (key, value, ttl) => {
@@ -155,10 +155,10 @@
         }
       }
       detectApple()
-    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">13</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">15</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">11</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 列表</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="笨蛋小方"><span class="site-name">笨蛋小方</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 列表</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Cloudflare R2储存图床+PicGo上传图片</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2024-03-10T13:04:51.000Z" title="Created 2024-03-10 21:04:51">2024-03-10</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2024-03-10T13:07:53.472Z" title="Updated 2024-03-10 21:07:53">2024-03-10</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%BB%BA%E7%AB%99/">建站</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%BB%BA%E7%AB%99/%E5%9B%BE%E5%BA%8A/">图床</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Cloudflare R2储存图床+PicGo上传图片"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post Views:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><blockquote>
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">13</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">15</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">11</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 列表</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="笨蛋小方"><span class="site-name">笨蛋小方</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 列表</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Cloudflare R2储存图床+PicGo上传图片</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2024-03-10T13:04:51.000Z" title="Created 2024-03-10 21:04:51">2024-03-10</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2024-03-11T00:01:44.726Z" title="Updated 2024-03-11 08:01:44">2024-03-11</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%BB%BA%E7%AB%99/">建站</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%BB%BA%E7%AB%99/%E5%9B%BE%E5%BA%8A/">图床</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Cloudflare R2储存图床+PicGo上传图片"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post Views:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><blockquote>
 <p>简单图床搭建完之后我发现访问太慢了</p>
 <p>决定迁移到Cloudflare R2储存 CDN免费</p>
-<p>总要比我这个2M小水管强多了</p>
+<p>总要比我宽带上传2M小水管强多了</p>
 <p>图片中的前后域名可能不一致，这是因为我没想好子域名究竟起什么好(´･ω･&#96;)?</p>
 </blockquote>
 <h1 id="付款方式添加"><a href="#付款方式添加" class="headerlink" title="付款方式添加"></a>付款方式添加</h1><ul>
@@ -170,37 +170,37 @@
 <p>重复输入三四遍😡😂后才发现我信用卡写的是一类卡了，不是万事达外币卡&#x2F;(ㄒoㄒ)&#x2F;~~</p>
 </li>
 <li><p>关于外币卡怎么整可以看看<a target="_blank" rel="noopener" href="http://g.nga.cn/read.php?tid=35097880&amp;forder_by=postdatedesc&amp;rand=352">泥潭 [心得交流] 网申 中行非人哉万事达借记卡 经验分享</a></p>
-<p>贝宝之前因为年龄刚注册就喜提永久封号了🥲</p>
+<p>贝宝之前因为年龄，刚注册就喜提永久封号了🥲</p>
 </li>
 </ul>
 <p>账单邮寄地址 如实填写</p>
 <p>姓与名都是第一个字母大写 例:王小明 Wang Xiaoming</p>
-<p>​<img src="https://cirno.bakaxiaofang.moe/notesorblogimg/2024/03/3d0f4829fd852fc1580b5695f9a2a27f.webp">​</p>
-<h1 id="创建与设置R2"><a href="#创建与设置R2" class="headerlink" title="创建与设置R2"></a>创建与设置R2</h1><h2 id="创建储存库"><a href="#创建储存库" class="headerlink" title="创建储存库"></a>创建储存库</h2><p>​<img src="https://cirno.bakaxiaofang.moe/notesorblogimg/2024/03/087e3305f528fcfc466b286350b54f30.webp">​</p>
+<p>​<img src="https://cirno.bakaxiaofang.moe/notesorblogimg/2024/03/3d0f4829fd852fc1580b5695f9a2a27f.webp" alt="付款方式与账单邮寄地址">​</p>
+<h1 id="创建与设置R2"><a href="#创建与设置R2" class="headerlink" title="创建与设置R2"></a>创建与设置R2</h1><h2 id="创建储存库"><a href="#创建储存库" class="headerlink" title="创建储存库"></a>创建储存库</h2><p>​<img src="https://cirno.bakaxiaofang.moe/notesorblogimg/2024/03/087e3305f528fcfc466b286350b54f30.webp" alt="创建储存库">​</p>
 <p>位置自行选择  关于地区速度可以参考<a target="_blank" rel="noopener" href="https://blog.tanglu.me/cloudflare-R2-configure/">tangluBlog-cloudflare对象存储R2配置</a></p>
 <p>省流:不推荐选择亚太地区 (0 w 0)</p>
-<p>​<img src="https://cirno.bakaxiaofang.moe/notesorblogimg/2024/03/14df2737991684ea1ff02aa68c93e0d7.webp">​</p>
-<h2 id="设置"><a href="#设置" class="headerlink" title="设置"></a>设置</h2><p>​<img src="https://cirno.bakaxiaofang.moe/notesorblogimg/2024/03/945ac8552a986e1e97af1444f730f75e.webp">​</p>
+<p>​<img src="https://cirno.bakaxiaofang.moe/notesorblogimg/2024/03/14df2737991684ea1ff02aa68c93e0d7.webp" alt="不推荐亚太地区">​</p>
+<h2 id="设置"><a href="#设置" class="headerlink" title="设置"></a>设置</h2><p>​<img src="https://cirno.bakaxiaofang.moe/notesorblogimg/2024/03/945ac8552a986e1e97af1444f730f75e.webp" alt="设置">​</p>
 <h3 id="如果没有域名"><a href="#如果没有域名" class="headerlink" title="如果没有域名"></a>如果没有域名</h3><p>如果没有域名 在设置里修改R2.dev 子域为允许访问</p>
 <p>如果有域名就不要允许访问R2.dev子域名</p>
-<p>​<img src="https://cirno.bakaxiaofang.moe/notesorblogimg/2024/03/507666df0466e4d2f961ec1c8ff7826f.webp">​</p>
+<p>​<img src="https://cirno.bakaxiaofang.moe/notesorblogimg/2024/03/507666df0466e4d2f961ec1c8ff7826f.webp" alt="R2.dev子域">​</p>
 <h3 id="如果有域名"><a href="#如果有域名" class="headerlink" title="如果有域名"></a>如果有域名</h3><p>将域名托管到Cloudflare或者在Cloudflare购买域名，可以参考<a href="https://bakaxiaofang.moe/posts/ea60be6e.html">注册dynadot域名并将域名托管到cloudflare</a></p>
 <p>设置自定义域 点击连接域</p>
-<p>​<img src="https://cirno.bakaxiaofang.moe/notesorblogimg/2024/03/25df3613b7109096db86e2f7d3c03e3c.webp">​</p>
+<p>​<img src="https://cirno.bakaxiaofang.moe/notesorblogimg/2024/03/25df3613b7109096db86e2f7d3c03e3c.webp" alt="自定义域">​</p>
 <p>添加自定义域  输入自己的域名(推荐用子域名)</p>
-<p>​<img src="https://cirno.bakaxiaofang.moe/notesorblogimg/2024/03/23a5ec441674de299c1b6992c9811db2.webp">​</p>
+<p>​<img src="https://cirno.bakaxiaofang.moe/notesorblogimg/2024/03/23a5ec441674de299c1b6992c9811db2.webp" alt="输入自己的域名">​</p>
 <p>返回R2&gt;概述  点击管理R2 API令牌</p>
-<p>​<img src="https://cirno.bakaxiaofang.moe/notesorblogimg/2024/03/41264f5cc401924f9c0d084b5197d352.webp">​</p>
+<p>​<img src="https://cirno.bakaxiaofang.moe/notesorblogimg/2024/03/41264f5cc401924f9c0d084b5197d352.webp" alt="R2&gt;概述">​</p>
 <p>依次点击创建API令牌</p>
 <p>权限修改为 对象读和写、写入和列出特定储存桶的对象。</p>
 <p>往下滑再点击创建API令牌</p>
-<p>​<img src="https://cirno.bakaxiaofang.moe/notesorblogimg/2024/03/85be04e16eb5884739e87996fac20f4e.webp">​</p>
-<p>这里要将<code>令牌值</code>​ <code>访问密钥ID</code>​ <code>机密访问密钥</code>​ 复制下来存放到记事本,嫌不安全手写到现实中的记事本😎或者加密</p>
+<p>​<img src="https://cirno.bakaxiaofang.moe/notesorblogimg/2024/03/85be04e16eb5884739e87996fac20f4e.webp" alt="创建R2 API令牌">​</p>
+<p>这里要将<code>令牌值</code>​ <code>访问密钥ID</code>​ <code>机密访问密钥</code>​ 复制下来存放到记事本</p>
 <p>等会需要用到，如果页面刷新没有了，删除这个API令牌再创建一个</p>
-<p>​<img src="https://cirno.bakaxiaofang.moe/notesorblogimg/2024/03/366a4738c8d7f89789ceb69aa8f437a2.webp">​</p>
+<p>​<img src="https://cirno.bakaxiaofang.moe/notesorblogimg/2024/03/366a4738c8d7f89789ceb69aa8f437a2.webp" alt="令牌值 访问密钥">​</p>
 <h1 id="下载PicGo并上传图片"><a href="#下载PicGo并上传图片" class="headerlink" title="下载PicGo并上传图片"></a>下载PicGo并上传图片</h1><p><a target="_blank" rel="noopener" href="https://github.com/Molunerfinn/PicGo">GitHub Molunerfinn&#x2F;PicGo</a>​</p>
 <p>点击 插件设置 搜素 S3 并安装</p>
-<p>​<img src="https://cirno.bakaxiaofang.moe/notesorblogimg/2024/03/b76526c91c557c8c8dd15d5bebf02b92.webp">​</p>
+<p>​<img src="https://cirno.bakaxiaofang.moe/notesorblogimg/2024/03/b76526c91c557c8c8dd15d5bebf02b92.webp" alt="PicGo S3插件">​</p>
 <h2 id="Amazon-S3设置"><a href="#Amazon-S3设置" class="headerlink" title="Amazon S3设置"></a>Amazon S3设置</h2><p>关于 Cloudfare R2 在 Amazon S3 的配置方法</p>
 <p>参考<a target="_blank" rel="noopener" href="https://github.com/wayjam/picgo-plugin-s3/issues/28">GitHub wayjam&#x2F;picgo-plugin-s3  issues:28</a></p>
 <p>图床配置名 <code>随意</code>​</p>
@@ -211,14 +211,14 @@
 <p>路径支持<strong>payload</strong> 具体参考<a target="_blank" rel="noopener" href="https://github.com/wayjam/picgo-plugin-s3">GitHub wayjam&#x2F;picgo-plugin-s3</a></p>
 <p>地区 (可选) <code>默认就好 也可以改成桶位置 例如 WNAM</code>​</p>
 <p>自定义节点 <code>S3 API</code>​</p>
-<p>​<img src="https://cirno.bakaxiaofang.moe/notesorblogimg/2024/03/31c181e764a094c3607eb0cc7b48bb1f.webp">​</p>
+<p>​<img src="https://cirno.bakaxiaofang.moe/notesorblogimg/2024/03/31c181e764a094c3607eb0cc7b48bb1f.webp" alt="S3 设置">​</p>
 <p>代理 (可选) <code>默认</code>​</p>
 <p>自定义域名 <code>自定义域 或 R2.dev子域</code>​</p>
 <p>ForcePathStyle <code>no</code>​</p>
 <p>拒绝无效TLS证书连接 <code>yes</code>​</p>
 <p>ACL 访问控制列表 默认为 <code>public-read</code>​ 这里修改为 <code>private</code>​</p>
 <p>Bucket前缀 <code>false</code>​</p>
-<p>​<img src="https://cirno.bakaxiaofang.moe/notesorblogimg/2024/03/90c1ead6b213558704f9ed0c7e4b9715.webp">​</p>
+<p>​<img src="https://cirno.bakaxiaofang.moe/notesorblogimg/2024/03/90c1ead6b213558704f9ed0c7e4b9715.webp" alt="S3 设置">​</p>
 <ul>
 <li>24&#x2F;03&#x2F;10正式迁移到Cloudflare R2储存当图床</li>
 </ul>
