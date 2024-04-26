@@ -1,0 +1,215 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Windows下的包管理与软件推荐 | 笨蛋小方</title><meta name="author" content="bakaxiaofang"><meta name="copyright" content="bakaxiaofang"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="包管理Scoop适用于 Windows 的命令行安装程序。 安装官网GitHub 123Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUserInvoke-RestMethod -Uri https:&#x2F;&#x2F;get.scoop.sh | Invoke-Expression  如果需要用到其他桶，必须安装gitscoop">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Windows下的包管理与软件推荐">
+<meta property="og:url" content="https://blog.bakaxiaofang.moe/posts/e3dbe0a6.html">
+<meta property="og:site_name" content="笨蛋小方">
+<meta property="og:description" content="包管理Scoop适用于 Windows 的命令行安装程序。 安装官网GitHub 123Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUserInvoke-RestMethod -Uri https:&#x2F;&#x2F;get.scoop.sh | Invoke-Expression  如果需要用到其他桶，必须安装gitscoop">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cirno.bakaxiaofang.moe/website/img/avatar/101027493.webp">
+<meta property="article:published_time" content="2024-04-26T10:26:58.000Z">
+<meta property="article:modified_time" content="2024-04-26T10:54:19.173Z">
+<meta property="article:author" content="bakaxiaofang">
+<meta property="article:tag" content="Windows">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cirno.bakaxiaofang.moe/website/img/avatar/101027493.webp"><link rel="shortcut icon" href="https://cirno.bakaxiaofang.moe/website/img/icon/Moya795839.webp"><link rel="canonical" href="https://blog.bakaxiaofang.moe/posts/e3dbe0a6.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=4.12.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.32/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Windows下的包管理与软件推荐',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-04-26 18:54:19'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://cirno.bakaxiaofang.moe/website/img/avatar/101027493.webp" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">18</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">20</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">13</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 列表</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="笨蛋小方"><span class="site-name">笨蛋小方</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 列表</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Windows下的包管理与软件推荐</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-04-26T10:26:58.000Z" title="发表于 2024-04-26 18:26:58">2024-04-26</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-04-26T10:54:19.173Z" title="更新于 2024-04-26 18:54:19">2024-04-26</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Windows下的包管理与软件推荐"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="包管理"><a href="#包管理" class="headerlink" title="包管理"></a>包管理</h1><h2 id="Scoop"><a href="#Scoop" class="headerlink" title="Scoop"></a>Scoop</h2><p>适用于 Windows 的命令行安装程序。</p>
+<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p><a target="_blank" rel="noopener" href="https://scoop.sh/">官网</a><br><a target="_blank" rel="noopener" href="https://github.com/ScoopInstaller/Scoop">GitHub</a></p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Set-ExecutionPolicy</span> <span class="literal">-ExecutionPolicy</span> RemoteSigned <span class="literal">-Scope</span> CurrentUser</span><br><span class="line"></span><br><span class="line"><span class="built_in">Invoke-RestMethod</span> <span class="literal">-Uri</span> https://get.scoop.sh | <span class="built_in">Invoke-Expression</span></span><br></pre></td></tr></table></figure>
+
+<p>如果需要用到其他桶，必须安装git<br><code>scoop install main/git</code></p>
+<p><code>scoop bucket add extras</code></p>
+<p><code>scoop install extras/v2rayn</code></p>
+<h2 id="Winget"><a href="#Winget" class="headerlink" title="Winget"></a>Winget</h2><p>WinGet 是 Windows 包管理器。此项目包括 CLI（命令行界面）、PowerShell 模块和 COM（组件对象模型）API（应用程序编程接口）。</p>
+<h3 id="安装-1"><a href="#安装-1" class="headerlink" title="安装"></a>安装</h3><p><a target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-tw/windows/package-manager/winget/">官网</a><br><a target="_blank" rel="noopener" href="https://apps.microsoft.com/detail/9nblggh4nns1?rtc=1&hl=zh-cn&gl=CN#activetab=pivot:overviewtab">微软商店</a><br><a target="_blank" rel="noopener" href="https://github.com/microsoft/winget-cli">GitHub</a></p>
+<h2 id="Chocolatey"><a href="#Chocolatey" class="headerlink" title="Chocolatey"></a>Chocolatey</h2><p>Chocolatey - 适用于 Windows 的包管理器</p>
+<p><a target="_blank" rel="noopener" href="https://chocolatey.org/">官网</a><br><a target="_blank" rel="noopener" href="https://github.com/chocolatey/choco">GitHub</a></p>
+<h2 id="WingetUI-将要改名为UniGetUI"><a href="#WingetUI-将要改名为UniGetUI" class="headerlink" title="WingetUI (将要改名为UniGetUI)"></a>WingetUI (将要改名为UniGetUI)</h2><p><a target="_blank" rel="noopener" href="https://github.com/marticliment/WingetUI/releases/latest/download/WingetUI.Installer.exe">点击这里下载WingetUI</a><br><a target="_blank" rel="noopener" href="https://github.com/marticliment/WingetUI">GitHub</a></p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">winget install SomePythonThings.WingetUIStore</span><br></pre></td></tr></table></figure>
+
+<h1 id="软件分享与插件美化跳转"><a href="#软件分享与插件美化跳转" class="headerlink" title="软件分享与插件美化跳转"></a>软件分享与插件美化跳转</h1><p>这边建议用WingetUI安装</p>
+<p>带* 号的 有插件美化</p>
+<h2 id="Google-Chrome-Canary-金丝雀版本的谷歌浏览器-￣、￣"><a href="#Google-Chrome-Canary-金丝雀版本的谷歌浏览器-￣、￣" class="headerlink" title="&gt; *Google.Chrome.Canary 金丝雀版本的谷歌浏览器(￣、￣)"></a>&gt; *Google.Chrome.Canary 金丝雀版本的谷歌浏览器(￣、￣)</h2><p>Google Chrome Canary 是专为开发人员设计的 Google Chrome 实验版本，更新频率为每一天。</p>
+<p><a target="_blank" rel="noopener" href="https://marticliment.com/wingetui/share?pid=Google.Chrome.Canary&pname=Google+Chrome+Canary&psource=Winget:+winget">WingetUI分享</a><br><a target="_blank" rel="noopener" href="https://www.google.com/chrome/canary/">官网</a></p>
+<h2 id="Google-Chrome-谷歌浏览器正式版"><a href="#Google-Chrome-谷歌浏览器正式版" class="headerlink" title="&gt; *Google.Chrome 谷歌浏览器正式版&lt;( _ _ )&gt;"></a>&gt; *Google.Chrome 谷歌浏览器正式版&lt;( _ _ )&gt;</h2><p>Google Chrome是Google开发的网络浏览器。</p>
+<p><a target="_blank" rel="noopener" href="https://marticliment.com/wingetui/share?pid=Google.Chrome&pname=Google+Chrome&psource=Winget:+winget">WingetUI分享</a><br><a target="_blank" rel="noopener" href="https://www.google.com/intl/zh-CN/chrome/">官网</a></p>
+<h2 id="QQ-NT-聊天软件咯－-－"><a href="#QQ-NT-聊天软件咯－-－" class="headerlink" title="&gt; *QQ.NT 聊天软件咯－_－"></a>&gt; *QQ.NT 聊天软件咯－_－</h2><p>基于NT 架构的全新QQ</p>
+<p><a target="_blank" rel="noopener" href="https://marticliment.com/wingetui/share?pid=Tencent.QQ.NT&pname=QQ&psource=Winget:+winget">WingetUI分享</a><br><a target="_blank" rel="noopener" href="https://im.qq.com/pcqq/index.shtml">官网</a><br>自行选择合适的版本<br>建议忽略这个软件包的更新</p>
+<h2 id="NetEase-CloudMusic-网易云音乐"><a href="#NetEase-CloudMusic-网易云音乐" class="headerlink" title="&gt; *NetEase.CloudMusic 网易云音乐^____^"></a>&gt; *NetEase.CloudMusic 网易云音乐^____^</h2><p>专注于发现与分享的音乐产品，依托专业音乐人、DJ、好友推荐及社交功能，为用户打造全新的音乐生活。</p>
+<p><a target="_blank" rel="noopener" href="https://marticliment.com/wingetui/share?pid=NetEase.CloudMusic&pname=%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90&psource=Winget:+winget">WingetUI分享</a><br><a target="_blank" rel="noopener" href="https://music.163.com/#/download">官网</a><br>如果你不用插件的话可以选择Bata版本<br>建议忽略这个软件包的更新</p>
+<h2 id="Telegram-TelegramDesktop-蓝色纸飞机-电报"><a href="#Telegram-TelegramDesktop-蓝色纸飞机-电报" class="headerlink" title="&gt; *Telegram.TelegramDesktop 蓝色纸飞机&#x2F;电报^_~"></a>&gt; *Telegram.TelegramDesktop 蓝色纸飞机&#x2F;电报^_~</h2><p>跨平台的即时通信软件，其客户端是自由及开放源代码软件，但服务端是专有软件。</p>
+<p><a target="_blank" rel="noopener" href="https://marticliment.com/wingetui/share?pid=Telegram.TelegramDesktop&pname=Telegram+Desktop&psource=Winget:+winget">WingetUI分享</a><br><a target="_blank" rel="noopener" href="https://desktop.telegram.org/">官网</a></p>
+<h2 id="Discord-不和谐-。-。"><a href="#Discord-不和谐-。-。" class="headerlink" title="&gt; *Discord 不和谐(。_。)"></a>&gt; *Discord 不和谐(。_。)</h2><p>专为社群设计的免费网络实时通话软件与数字发行平台，主要针对游戏玩家、教育人士、朋友及商业人士，用户之间可以在软件的聊天频道通过讯息、图片、视频和音频进行交流。</p>
+<p><a target="_blank" rel="noopener" href="https://marticliment.com/wingetui/share?pid=Discord.Discord&pname=Discord&psource=Winget:+winget">WingetUI分享</a><br><a target="_blank" rel="noopener" href="https://discord.com/">官网</a></p>
+<h2 id="Steam-蒸汽游戏啦ψ-｀∇´-ψ"><a href="#Steam-蒸汽游戏啦ψ-｀∇´-ψ" class="headerlink" title="&gt; *Steam 蒸汽游戏啦ψ(｀∇´)ψ"></a>&gt; *Steam 蒸汽游戏啦ψ(｀∇´)ψ</h2><p>Steam是Valve推出的电子游戏数字分发平台</p>
+<p><a target="_blank" rel="noopener" href="https://marticliment.com/wingetui/share?pid=Valve.Steam&pname=Steam&psource=Winget:+winget">WingetUI分享</a><br><a target="_blank" rel="noopener" href="https://store.steampowered.com/about/">官网</a></p>
+<h2 id="vs-code-编辑器X﹏X"><a href="#vs-code-编辑器X﹏X" class="headerlink" title="&gt; *vs code 编辑器X﹏X"></a>&gt; *vs code 编辑器X﹏X</h2><p>Visual Studio Code是一款由微软开发且跨平台的免费源代码编辑器。</p>
+<p><a target="_blank" rel="noopener" href="https://marticliment.com/wingetui/share?pid=Microsoft.VisualStudioCode&pname=Microsoft+Visual+Studio+Code&psource=Winget:+winget">WingetUI分享</a><br><a target="_blank" rel="noopener" href="https://code.visualstudio.com/">官网</a></p>
+<h2 id="Oh-My-Posh-≧∇≦-ﾉ"><a href="#Oh-My-Posh-≧∇≦-ﾉ" class="headerlink" title="&gt; Oh My Posh (≧∇≦)ﾉ"></a>&gt; Oh My Posh (≧∇≦)ﾉ</h2><p>最可定制和低延迟的跨平台&#x2F;shell 提示渲染器。</p>
+<p><a target="_blank" rel="noopener" href="https://marticliment.com/wingetui/share?pid=JanDeDobbeleer.OhMyPosh&pname=Oh+My+Posh+version+19.24.3&psource=Winget:+winget">WingetUI分享</a><br><a target="_blank" rel="noopener" href="https://ohmyposh.dev/">官网</a><br><a target="_blank" rel="noopener" href="https://github.com/JanDeDobbeleer/oh-my-posh">GitHub</a></p>
+<h2 id="Clink-‾◡◝"><a href="#Clink-‾◡◝" class="headerlink" title="&gt; Clink (‾◡◝)"></a>&gt; Clink (‾◡◝)</h2><p>Bash 强大的命令行编辑功能cmd.exe。</p>
+<p><a target="_blank" rel="noopener" href="https://marticliment.com/wingetui/share?pid=chrisant996.Clink&pname=Clink+v1.6.12&psource=Winget:+winget">WingetUI分享</a><br><a target="_blank" rel="noopener" href="https://chrisant996.github.io/clink/clink.html">官网</a><br><a target="_blank" rel="noopener" href="https://github.com/chrisant996/clink">GitHub</a></p>
+<h2 id="PowerShell7-•̀-ω-•́-✧"><a href="#PowerShell7-•̀-ω-•́-✧" class="headerlink" title="&gt; PowerShell7 ( •̀ ω •́ )✧"></a>&gt; PowerShell7 ( •̀ ω •́ )✧</h2><p>PowerShell是微软公司开发的任务自动化和配置管理架构。</p>
+<p><a target="_blank" rel="noopener" href="https://marticliment.com/wingetui/share?pid=Microsoft.PowerShell&pname=PowerShell+7-x64&psource=Winget:+winget">WingetUI分享</a><br><a target="_blank" rel="noopener" href="https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.4">官网</a><br><a target="_blank" rel="noopener" href="https://github.com/PowerShell/PowerShell">GitHub</a></p>
+<h2 id="gsudo-获取权限-o-y"><a href="#gsudo-获取权限-o-y" class="headerlink" title="&gt; gsudo 获取权限^o^y"></a>&gt; gsudo 获取权限^o^y</h2><p>在Windows像linux用<code>sudo</code>或<code>gsudo</code>命令获取权限。</p>
+<p><a target="_blank" rel="noopener" href="https://marticliment.com/wingetui/share?pid=gerardog.gsudo&pname=gsudo&psource=Winget:+winget">WingetUI分享</a><br><a target="_blank" rel="noopener" href="https://gerardog.github.io/gsudo/">官网</a><br><a target="_blank" rel="noopener" href="https://github.com/gerardog/gsudo">GitHub</a></p>
+<h2 id="AutoDarkMode-深浅自动切换o-￣︶￣-o"><a href="#AutoDarkMode-深浅自动切换o-￣︶￣-o" class="headerlink" title="&gt; AutoDarkMode 深浅自动切换o(￣︶￣)o"></a>&gt; AutoDarkMode 深浅自动切换o(<em>￣︶￣</em>)o</h2><p>自动在 Windows 10 和 Windows 11 的深色和浅色主题之间切换。</p>
+<p><a target="_blank" rel="noopener" href="https://marticliment.com/wingetui/share?pid=Armin2208.WindowsAutoNightMode&pname=Auto+Dark+Mode&psource=Winget:+winget">WingetUI分享</a></p>
+<h2 id="Snipaste-Bata-截图-贴图q-≧▽≦q"><a href="#Snipaste-Bata-截图-贴图q-≧▽≦q" class="headerlink" title="&gt; Snipaste Bata 截图+贴图q(≧▽≦q)"></a>&gt; Snipaste Bata 截图+贴图q(≧▽≦q)</h2><p>Snipaste 是一个简单但强大的截图工具，也可以让你将截图贴回到屏幕上！下载并打开 Snipaste，按下 F1 来开始截图，再按 F3，截图就在桌面置顶显示了。就这么简单！</p>
+<p><a target="_blank" rel="noopener" href="https://marticliment.com/wingetui/share?pid=snipaste-beta&pname=Snipaste+Beta&psource=Scoop:+versions">WingetUI分享</a><br><a target="_blank" rel="noopener" href="https://www.snipaste.com/">官网</a><br><a target="_blank" rel="noopener" href="https://github.com/Snipaste/feedback">GitHub</a></p>
+<h3 id="配置"><a href="#配置" class="headerlink" title="^配置^"></a>^配置^</h3><p>右键图标 &gt; 首选项 &gt; 常规<br>✅ 开机自启 ✅ 以管理员身份</p>
+<p>右键图标 &gt; 首选项 &gt; 输出</p>
+<p>图像质量：-1 自动 100 不压缩</p>
+<p>✅ 自动保存</p>
+<p>根据命名规则修改路径</p>
+<p>后缀png格式建议修改为webp</p>
+<p>右键图标 &gt; 首选项 &gt; 控制</p>
+<p>修改快捷键</p>
+<h3 id="关于开启HDR截图谷歌浏览器曝光"><a href="#关于开启HDR截图谷歌浏览器曝光" class="headerlink" title="关于开启HDR截图谷歌浏览器曝光"></a>关于开启HDR截图谷歌浏览器曝光</h3><p><a target="_blank" rel="noopener" href="https://github.com/Snipaste/feedback/issues/1112">GitHub issues</a></p>
+<p>chrome:&#x2F;&#x2F;flags&#x2F;<br>搜索Force color profile<br>修改为sRGB 但这样视频就没有HDR了，不推荐。</p>
+<p>也可以用微软自带的截图<code>Win + Shift + S</code>，但这样截图也有轻微曝光。</p>
+<p>没有太好的解决办法，个人建议熟练使用<code>Win + Alt + B</code>快捷键关闭HDR</p>
+<p>实在嫌麻烦也可以用狐火浏览器(´。＿。｀)</p>
+<h2 id="Mozilla-Firefox-火狐浏览器b-￣▽￣-d"><a href="#Mozilla-Firefox-火狐浏览器b-￣▽￣-d" class="headerlink" title="*Mozilla Firefox 火狐浏览器b(￣▽￣)d"></a>*Mozilla Firefox 火狐浏览器b(￣▽￣)d</h2><p>Mozilla Firefox，通称火狐，中文也通称火狐，是自由及开放原始码的网页浏览器，由Mozilla基金会及其子公司Mozilla公司开发。</p>
+<p><a target="_blank" rel="noopener" href="https://www.mozilla.org/en-US/firefox/new/">官网</a><br><a target="_blank" rel="noopener" href="https://github.com/mozilla">GitHub</a></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://blog.bakaxiaofang.moe">bakaxiaofang</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://blog.bakaxiaofang.moe/posts/e3dbe0a6.html">https://blog.bakaxiaofang.moe/posts/e3dbe0a6.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://blog.bakaxiaofang.moe" target="_blank">笨蛋小方</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Windows/">Windows</a></div><div class="post_share"><div class="social-share" data-image="https://cirno.bakaxiaofang.moe/website/img/avatar/101027493.webp" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/posts/4a17b156.html" title="Hello World"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Hello World</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/posts/417e944c.html" title="AList Windows下的安装与配置"><div class="cover" style="background: var(--default-bg-color)"></div><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-03-17</div><div class="title">AList Windows下的安装与配置</div></div></a></div><div><a href="/posts/4bc5267d.html" title="Windows 或 OpenWrt路由器 DDNS IPv6"><div class="cover" style="background: var(--default-bg-color)"></div><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-03-08</div><div class="title">Windows 或 OpenWrt路由器 DDNS IPv6</div></div></a></div><div><a href="/posts/881ba55e.html" title="Windows 程序或脚本自启动"><div class="cover" style="background: var(--default-bg-color)"></div><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-03-08</div><div class="title">Windows 程序或脚本自启动</div></div></a></div><div><a href="/posts/33417866.html" title="Windows通过EUI-64固定IPv6后缀"><div class="cover" style="background: var(--default-bg-color)"></div><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-02-10</div><div class="title">Windows通过EUI-64固定IPv6后缀</div></div></a></div><div><a href="/posts/7677b905.html" title="Windows下搭建Nginx + php环境"><div class="cover" style="background: var(--default-bg-color)"></div><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-02-06</div><div class="title">Windows下搭建Nginx + php环境</div></div></a></div><div><a href="/posts/5a4838a4.html" title="Windows 终端美化"><div class="cover" style="background: var(--default-bg-color)"></div><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-03-15</div><div class="title">Windows 终端美化</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://cirno.bakaxiaofang.moe/website/img/avatar/101027493.webp" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">bakaxiaofang</div><div class="author-info__description">琪露诺太强了口牙!</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">18</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">20</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">13</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8C%85%E7%AE%A1%E7%90%86"><span class="toc-number">1.</span> <span class="toc-text">包管理</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Scoop"><span class="toc-number">1.1.</span> <span class="toc-text">Scoop</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85"><span class="toc-number">1.1.1.</span> <span class="toc-text">安装</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Winget"><span class="toc-number">1.2.</span> <span class="toc-text">Winget</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85-1"><span class="toc-number">1.2.1.</span> <span class="toc-text">安装</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Chocolatey"><span class="toc-number">1.3.</span> <span class="toc-text">Chocolatey</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#WingetUI-%E5%B0%86%E8%A6%81%E6%94%B9%E5%90%8D%E4%B8%BAUniGetUI"><span class="toc-number">1.4.</span> <span class="toc-text">WingetUI (将要改名为UniGetUI)</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB%E4%B8%8E%E6%8F%92%E4%BB%B6%E7%BE%8E%E5%8C%96%E8%B7%B3%E8%BD%AC"><span class="toc-number">2.</span> <span class="toc-text">软件分享与插件美化跳转</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Google-Chrome-Canary-%E9%87%91%E4%B8%9D%E9%9B%80%E7%89%88%E6%9C%AC%E7%9A%84%E8%B0%B7%E6%AD%8C%E6%B5%8F%E8%A7%88%E5%99%A8-%EF%BF%A3%E3%80%81%EF%BF%A3"><span class="toc-number">2.1.</span> <span class="toc-text">&gt; *Google.Chrome.Canary 金丝雀版本的谷歌浏览器(￣、￣)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Google-Chrome-%E8%B0%B7%E6%AD%8C%E6%B5%8F%E8%A7%88%E5%99%A8%E6%AD%A3%E5%BC%8F%E7%89%88"><span class="toc-number">2.2.</span> <span class="toc-text">&gt; *Google.Chrome 谷歌浏览器正式版&lt;( _ _ )&gt;</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#QQ-NT-%E8%81%8A%E5%A4%A9%E8%BD%AF%E4%BB%B6%E5%92%AF%EF%BC%8D-%EF%BC%8D"><span class="toc-number">2.3.</span> <span class="toc-text">&gt; *QQ.NT 聊天软件咯－_－</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#NetEase-CloudMusic-%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90"><span class="toc-number">2.4.</span> <span class="toc-text">&gt; *NetEase.CloudMusic 网易云音乐^____^</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Telegram-TelegramDesktop-%E8%93%9D%E8%89%B2%E7%BA%B8%E9%A3%9E%E6%9C%BA-%E7%94%B5%E6%8A%A5"><span class="toc-number">2.5.</span> <span class="toc-text">&gt; *Telegram.TelegramDesktop 蓝色纸飞机&#x2F;电报^_~</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Discord-%E4%B8%8D%E5%92%8C%E8%B0%90-%E3%80%82-%E3%80%82"><span class="toc-number">2.6.</span> <span class="toc-text">&gt; *Discord 不和谐(。_。)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Steam-%E8%92%B8%E6%B1%BD%E6%B8%B8%E6%88%8F%E5%95%A6%CF%88-%EF%BD%80%E2%88%87%C2%B4-%CF%88"><span class="toc-number">2.7.</span> <span class="toc-text">&gt; *Steam 蒸汽游戏啦ψ(｀∇´)ψ</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#vs-code-%E7%BC%96%E8%BE%91%E5%99%A8X%EF%B9%8FX"><span class="toc-number">2.8.</span> <span class="toc-text">&gt; *vs code 编辑器X﹏X</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Oh-My-Posh-%E2%89%A7%E2%88%87%E2%89%A6-%EF%BE%89"><span class="toc-number">2.9.</span> <span class="toc-text">&gt; Oh My Posh (≧∇≦)ﾉ</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Clink-%E2%80%BE%E2%97%A1%E2%97%9D"><span class="toc-number">2.10.</span> <span class="toc-text">&gt; Clink (‾◡◝)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#PowerShell7-%E2%80%A2%CC%80-%CF%89-%E2%80%A2%CC%81-%E2%9C%A7"><span class="toc-number">2.11.</span> <span class="toc-text">&gt; PowerShell7 ( •̀ ω •́ )✧</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#gsudo-%E8%8E%B7%E5%8F%96%E6%9D%83%E9%99%90-o-y"><span class="toc-number">2.12.</span> <span class="toc-text">&gt; gsudo 获取权限^o^y</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#AutoDarkMode-%E6%B7%B1%E6%B5%85%E8%87%AA%E5%8A%A8%E5%88%87%E6%8D%A2o-%EF%BF%A3%EF%B8%B6%EF%BF%A3-o"><span class="toc-number">2.13.</span> <span class="toc-text">&gt; AutoDarkMode 深浅自动切换o(￣︶￣)o</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Snipaste-Bata-%E6%88%AA%E5%9B%BE-%E8%B4%B4%E5%9B%BEq-%E2%89%A7%E2%96%BD%E2%89%A6q"><span class="toc-number">2.14.</span> <span class="toc-text">&gt; Snipaste Bata 截图+贴图q(≧▽≦q)</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE"><span class="toc-number">2.14.1.</span> <span class="toc-text">^配置^</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B3%E4%BA%8E%E5%BC%80%E5%90%AFHDR%E6%88%AA%E5%9B%BE%E8%B0%B7%E6%AD%8C%E6%B5%8F%E8%A7%88%E5%99%A8%E6%9B%9D%E5%85%89"><span class="toc-number">2.14.2.</span> <span class="toc-text">关于开启HDR截图谷歌浏览器曝光</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Mozilla-Firefox-%E7%81%AB%E7%8B%90%E6%B5%8F%E8%A7%88%E5%99%A8b-%EF%BF%A3%E2%96%BD%EF%BF%A3-d"><span class="toc-number">2.15.</span> <span class="toc-text">*Mozilla Firefox 火狐浏览器b(￣▽￣)d</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/e3dbe0a6.html" title="Windows下的包管理与软件推荐">Windows下的包管理与软件推荐</a><time datetime="2024-04-26T10:26:58.000Z" title="发表于 2024-04-26 18:26:58">2024-04-26</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/4a17b156.html" title="Hello World">Hello World</a><time datetime="2024-04-26T10:23:26.366Z" title="发表于 2024-04-26 18:23:26">2024-04-26</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/417e944c.html" title="AList Windows下的安装与配置">AList Windows下的安装与配置</a><time datetime="2024-03-17T03:43:42.000Z" title="发表于 2024-03-17 11:43:42">2024-03-17</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/5a4838a4.html" title="Windows 终端美化">Windows 终端美化</a><time datetime="2024-03-15T06:31:23.000Z" title="发表于 2024-03-15 14:31:23">2024-03-15</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/f28ce910.html" title="Hexo 搭建并一键部署到GitHub Pages，然后添加域名">Hexo 搭建并一键部署到GitHub Pages，然后添加域名</a><time datetime="2024-03-13T12:20:04.000Z" title="发表于 2024-03-13 20:20:04">2024-03-13</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By bakaxiaofang</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.12.0"></script><script src="/js/main.js?v=4.12.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.32/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
